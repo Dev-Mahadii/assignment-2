@@ -23,6 +23,53 @@
 
 }
 
+/*Our Plants*/
+
+.our-plants {
+    margin-top: 120px;
+    margin-bottom: 120px;
+}
+
+.section-title {
+    font-weight: bold;
+    font-family: "Noto Serif", serif;
+}
+
+.section-paragraph {
+    font-weight: 400;
+    opacity: 50%;
+}
+
+.section-paragraph {
+    margin-top: 16px;
+}
+
+.plant-card {
+    margin-top: 49px;
+}
+
+.card-title {
+    /* margin-top: 30px; */
+    font-family: "Inter", sans-serif;
+    font-size: 22px;
+    font-weight: 600px;
+}
+
+.card-info {
+    padding: 30px 16px;
+}
+
+.card-paragraph {
+    /* margin-bottom: 30px; */
+    font-family: "Inter", sans-serif;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.card-btn {
+    padding: 19px;
+}
+
 
 
 
@@ -79,6 +126,12 @@
 
     .l-break {
         display: none;
+    }
+
+    /* Our Plants */
+
+    .plant-card {
+        grid-template-columns: repeat(2, 1fr);
     }
 
 }
