@@ -82,6 +82,12 @@
     margin-top: 20px;
 }
 
+.paragraph-list ul li{
+    margin-left: 40px;
+}
+
+
+
 
 
 
@@ -143,6 +149,30 @@
 
     .plant-card {
         grid-template-columns: repeat(2, 1fr);
+    }
+
+    .our-plants {
+    margin-top: 65px;
+    margin-bottom: 40px;
+    }
+
+    /*Plant Lover*/
+    .plant-lover{
+        display: flex;
+        flex-direction: column;
+        gap: 18px;
+    }
+
+    .plant-lover-title{
+        font-size: 24px;
+    }
+
+    .item-1{
+    margin-top: 16px;
+    }
+    
+    .paragraph-list ul li{
+        font-size: 14px;
     }
 
 }
