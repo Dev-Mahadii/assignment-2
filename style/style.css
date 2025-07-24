@@ -70,6 +70,17 @@
     padding: 19px;
 }
 
+/*Plant Lover*/
+
+.plant-lover-title{
+    font-family: "Noto Serif", serif;
+    font-weight: bold;
+    line-height: 62px;
+}
+
+.item-1{
+    margin-top: 20px;
+}
 
 
 
