@@ -346,6 +346,20 @@ a.item2 {
     grid-template-areas: 'fcol1 fcol1 fcol2 fcol3 fcol4 fcol4';
 }
 
+@keyframes slow-spin {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.animate-slow-spin {
+    animation: slow-spin 25s linear infinite;
+}
+
 
 
 
@@ -502,14 +516,18 @@ a.item2 {
     .footer {
         display: grid;
         column-gap: 20px;
-        grid-template-areas:    'fcol1' 
-                                'fcol2'
-                                'fcol3'
-                                'fcol4';
+        grid-template-areas: 'fcol1'
+            'fcol2'
+            'fcol3'
+            'fcol4';
     }
 
-    .footer{
+    .footer {
         row-gap: 32px;
+    }
+
+    .badge {
+        display: none;
     }
 
 }
