@@ -3,6 +3,21 @@
     padding: 0;
 }
 
+.menu-item-class li{
+
+    font-family: "Inter", sans-serif;
+    font-family: 24px;
+    color: #8987A1;
+}
+
+.menu-item-class li:nth-child(1){
+
+    font-family: "Inter", sans-serif;
+    font-weight: bold;
+    font-family: 24px;
+    color: #000;
+}
+
 .main-section {
     justify-self: center;
     width: 1140px;
