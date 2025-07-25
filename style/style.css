@@ -72,19 +72,147 @@
 
 /*Plant Lover*/
 
-.plant-lover-title{
+.plant-lover-title {
     font-family: "Noto Serif", serif;
     font-weight: bold;
     line-height: 62px;
 }
 
-.item-1{
+.item-1 {
     margin-top: 20px;
 }
 
-.paragraph-list ul li{
+.paragraph-list ul li {
     margin-left: 40px;
 }
+
+
+/*Latest Deals*/
+
+.latest-deal-parent {
+    margin-top: 133px;
+    margin-bottom: 120px;
+}
+
+
+
+.item1 {
+    grid-area: myGrid;
+}
+
+.item2 {
+    grid-area: myImage;
+}
+
+.item3 {
+    grid-area: myBackground;
+}
+
+.latest-deals {
+    display: grid;
+    grid-template-areas: 'myGrid     myBackground     myBackground'
+        'myImage    myBackground     myBackground';
+
+    height: 423px;
+    gap: 25px;
+
+
+
+}
+
+.latest-deals div {
+    border-radius: 14px;
+}
+
+/*image overlay*/
+.item1,
+.item2,
+.item3 {
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+    /* ensures overlay doesn't spill */
+}
+
+/* Overlay using ::before */
+.item1::before,
+.item2::before,
+.item3::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+    /* black overlay, 40% opacity */
+    z-index: 1;
+}
+
+/* Optional: ensure any content inside appears above overlay */
+.item1 *,
+.item2 *,
+.item3 * {
+    position: relative;
+    z-index: 2;
+}
+
+/*end here*/
+
+
+.item1 {
+    background-image: url('../assets/deal-bloom.png');
+    background-size: cover;
+    background-position: center;
+
+
+}
+
+.item2 {
+    background-image: url('../assets/deal-ana.png');
+    background-size: cover;
+    background-position: center;
+}
+
+.item3 {
+    background-image: url('../assets/deal-zabo.png');
+    background-size: cover;
+    background-position: center;
+}
+
+.item1 h2,
+.item2 h2 {
+    font-family: "Noto Serif", serif;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+a.item1,
+a.item2 {
+    font-family: "Inter", sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+
+.item3 h2 {
+    font-family: "Noto Serif", serif;
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.item3 a {
+    font-family: "Inter", sans-serif;
+    font-size: 28px;
+    font-weight: 500;
+}
+
+
+/*Subscribe Section*/
+
+
+
 
 
 
@@ -152,27 +280,57 @@
     }
 
     .our-plants {
-    margin-top: 65px;
-    margin-bottom: 40px;
+        margin-top: 65px;
+        margin-bottom: 40px;
     }
 
     /*Plant Lover*/
-    .plant-lover{
+    .plant-lover {
         display: flex;
         flex-direction: column;
         gap: 18px;
     }
 
-    .plant-lover-title{
+    .plant-lover-title {
         font-size: 24px;
     }
 
-    .item-1{
-    margin-top: 16px;
+    .item-1 {
+        margin-top: 16px;
     }
-    
-    .paragraph-list ul li{
+
+    .paragraph-list ul li {
         font-size: 14px;
+    }
+
+
+    /*Latest Deals*/
+
+    .latest-deals {
+        display: grid;
+        grid-template-areas: 'myGrid'
+            'myImage'
+            'myBackground';
+
+        gap: 20px;
+
+    }
+
+    .latest-deals div {
+        height: 201px;
+    }
+
+
+    .item3 h2 {
+        font-family: "Noto Serif", serif;
+        font-size: 20px;
+        font-weight: bold;
+    }
+
+    .item3 a {
+        font-family: "Inter", sans-serif;
+        font-size: 16px;
+        font-weight: 500;
     }
 
 }
