@@ -3,14 +3,14 @@
     padding: 0;
 }
 
-.menu-item-class li{
+.menu-item-class li {
 
     font-family: "Inter", sans-serif;
     font-family: 24px;
     color: #8987A1;
 }
 
-.menu-item-class li:nth-child(1){
+.menu-item-class li:nth-child(1) {
 
     font-family: "Inter", sans-serif;
     font-weight: bold;
@@ -228,7 +228,7 @@ a.item2 {
 /*Subscribe Section*/
 
 .subscribe-section {
-    
+
     width: 100%;
     height: 533px;
     background-color: bisque;
@@ -237,7 +237,7 @@ a.item2 {
     background-repeat: no-repeat;
     background-size: cover;
 
-    
+
 }
 
 .overlay {
@@ -279,6 +279,74 @@ a.item2 {
     font-size: 50px;
     font-weight: bold;
 }
+
+/*Footer*/
+
+.footer {
+    padding: 50px 0;
+}
+
+.footer-paragraph {
+    font-family: "Inter", sans-serif;
+    font-size: 22px;
+    font-weight: 400;
+    color: #000;
+    opacity: 50%;
+}
+
+.fcol-2 ul li a {
+    font-family: "Inter", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    color: #000;
+    opacity: 50%;
+}
+
+.fcol-3 ul li a {
+    font-family: "Inter", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    color: #000;
+    opacity: 50%;
+}
+
+.fcol-1 img {
+    width: 135px;
+    height: 82px;
+}
+
+.fcol-1 {
+    grid-area: fcol1;
+
+}
+
+.fcol-2 {
+    grid-area: fcol2;
+
+}
+
+.fcol-3 {
+    grid-area: fcol3;
+
+}
+
+.fcol-4 {
+    grid-area: fcol4;
+
+}
+
+.fcol-4 img {
+    width: 36px;
+    height: 36px;
+}
+
+.footer {
+    display: grid;
+    column-gap: 20px;
+    grid-template-areas: 'fcol1 fcol1 fcol2 fcol3 fcol4 fcol4';
+}
+
+
 
 
 
@@ -421,12 +489,27 @@ a.item2 {
     .subscribe-form input[type="email"] {
 
         width: 60vw;
-        
+
     }
 
     .subscribe-form button {
         width: 103px;
-        
+
+    }
+
+    /*Footer*/
+
+    .footer {
+        display: grid;
+        column-gap: 20px;
+        grid-template-areas:    'fcol1' 
+                                'fcol2'
+                                'fcol3'
+                                'fcol4';
+    }
+
+    .footer{
+        row-gap: 32px;
     }
 
 }
